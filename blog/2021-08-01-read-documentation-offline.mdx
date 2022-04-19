@@ -5,24 +5,44 @@ authors: [sinane]
 tags: [documentation, development]
 ---
 
+import first_step from '@site/blog/images/first_step.jpg';
+import second_step from '@site/blog/images/second_step.jpg';
+import third_step from '@site/blog/images/third_step.jpg';
+import third_step_bis from '@site/blog/images/third_step_bis.jpg';
+import last_step from '@site/blog/images/last_step.jpg';
+
+import Center from '../src/components/Center';
+import Image from '../src/components/Image';
+
 **Vous ne trouvez jamais le temps de parfaire vos connaissances sur les librairies que vous utilisez ?🧐**
 
 **Grâce à [devdocs.io](https://devdocs.io/) et à la magie des [services workers](https://developer.mozilla.org/fr/docs/Web/API/Service_Worker_API), vous allez pouvoir mettre à profit les longs trajets sans connexions. 🚄🚄🚄**
 
-## Comment accéder à de la documentation sans internet ? ##
+## Comment accéder à de la documentation sans internet ?
 
 - Allez sur [devdocs.io](https://devdocs.io/):
 
-![first-step-devdocs](./images/first_step.png)
+<Center>
+    <Image width={400} src={first_step} alt="first step" />
+</Center>
 
 - Recherchez la documentation de votre choix:
 
-![second-step-devdocs](./images/second_step.png)
+<Center>
+    <Image width={400} src={second_step} alt="second step" />
+</Center>
 
 - Cliquez sur les **bullets points** puis sur **Offline Data**
+<Center>
+    <Image width={400} src={third_step} alt="second step" />
+    <Image width={400} src={third_step_bis} alt="second step" />
+</Center>
+
 
 - Dans **Offline Documentation** cliquez sur **Install all**
 
-![last-step-devdocs](./images/last_step.png)
+<Center>
+    <Image width={400} src={last_step} alt="last step" />
+</Center>
 
 **Voilà ! Vous pouvez désormais lire de la documentation sur DevDocs même sans internet 😬. (Désactivez vos données mobiles pour tester)**
