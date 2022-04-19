@@ -12,7 +12,7 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "https://github.com/ssi-moha.png",
   organizationName: "ssi-moha", // Usually your GitHub org/user name.
   projectName: "sinane.dev", // Usually your repo name.
 
@@ -24,15 +24,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/ssi-moha/sinane.dev",
+          editUrl: "https://github.com/ssi-moha/sinane.dev/tree/master",
         },
         blog: {
           showReadingTime: true,
           routeBasePath: "/",
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/ssi-moha/sinane.dev",
+          editUrl: "https://github.com/ssi-moha/sinane.dev/tree/master",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -88,7 +86,6 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
