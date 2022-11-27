@@ -50,8 +50,18 @@ const config = {
         },
         items: [
           {
-            href: "https://github.com/ssi-moha",
+            label: "Stack Overflow",
+            href: "https://stackoverflow.com/users/10321267/sinane",
+            position: "right",
+          },
+          {
+            label: "Twitter",
+            href: "https://twitter.com/sinane_eth",
+            position: "right",
+          },
+          {
             label: "GitHub",
+            href: "https://github.com/ssi-moha",
             position: "right",
           },
         ],
@@ -60,7 +70,7 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Community",
+            title: "More",
             items: [
               {
                 label: "Stack Overflow",
@@ -70,15 +80,10 @@ const config = {
               //   label: "Discord",
               //   href: "https://discordapp.com/invite/docusaurus",
               // },
-              // {
-              //   label: "Twitter",
-              //   href: "https://twitter.com/docusaurus",
-              // },
-            ],
-          },
-          {
-            title: "More",
-            items: [
+              {
+                label: "Twitter",
+                href: "https://twitter.com/sinane_eth",
+              },
               {
                 label: "GitHub",
                 href: "https://github.com/ssi-moha",
