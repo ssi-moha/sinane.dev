@@ -4,6 +4,15 @@ title: Principe de responsabilité unique
 authors: [sinane]
 tags: [SOLID, development, typescript]
 ---
+
+import SRP from "@site/blog/images/SRP.png";
+import Center from "../src/components/Center";
+import Image from "../src/components/Image";
+
+<Center>
+  <Image width={400} src={SRP} alt="Angry automobilist" />
+</Center>
+
 Une classe ne devrait jamais avoir plus d'une seule raison de changer ni plus d'une seule responsabilité.
 
 Le Principe de responsabilité unique ("Single responsibility Principle") est le premier principe SOLID dont j'ai entendu parler dans ma carrière de développeur.
@@ -60,6 +69,7 @@ person2.saveToWhitelist();
 
 Ce code fonctionne correctement mais deux responsabilités s'entremêlent, celle de modéliser l'identité d'une personne et celle d'écrire le nom d'une personne dans une liste blanche.
 Réecrivons le code selon le principe de responabilité unique :
+
 ```ts
 import fs from "fs";
 
@@ -96,7 +106,7 @@ const whitelist = WhitelistFactory();
 
 whitelist.saveToWhitelist(person1);
 whitelist.saveToWhitelist(person2);
-``` 
+```
 
 Les deux responsabilités ( à savoir la modélisation de l'identité de la personne et noter le nom complet de la personne dans une liste blanche ) sont séparées dans deux entitées différentes.
 
